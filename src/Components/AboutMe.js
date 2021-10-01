@@ -20,7 +20,7 @@ export default function AboutMe() {
       <div className={classes.rightContainer}>
 
         <div className={classes.text}>
-        <h1 className={classes.title}>About</h1>
+        <h1 className={classes.title}>About me</h1>
         <h1 className={classes.content}>
           i’m a fullstack developer proficient in the MERN stack
           <br />
