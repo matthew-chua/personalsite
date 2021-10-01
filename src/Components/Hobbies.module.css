@@ -1,0 +1,98 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+}
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+  padding-right: 4.5rem;
+}
+.text {
+  width: 65%;
+  border-radius: 30px;
+  background: #eeeeed;
+  box-shadow: 33px 33px 67px #5a5a5a, -33px -33px 67px #ffffff;
+  padding: 2rem;
+}
+.title {
+  font-family: "Amatic SC";
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 8rem);
+}
+.content {
+  font-family: "Poiret One";
+  font-size: clamp(0.5rem, 3vw, 2.5rem);
+}
+.pic {
+  height: 60%;
+  width: 60%;
+}
+/* @media screen and (max-width: 600px) {
+  .root {
+    padding-top: 10px;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .leftContainer {
+    width: 100vw;
+    height: 30vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .rightContainer {
+    width: 100vw;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  .pic{
+    height: 300px;
+    padding-top: 10px;
+  }
+  
+} */
+@media screen and (max-width: 600px) {
+  .root{
+    padding-top: 100px;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .leftContainer{
+    width: 100vw;
+    height: 30vh;
+    
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+   }
+  .rightContainer{
+   width: 100vw;
+   height: 60vh;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: flex-start;
+ }
+ .pic{
+   
+   margin: 0;
+   height: 300px;
+ }
+}

@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./Layout/NavBar";
+import { useState } from "react";
+
+//components
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+
+//css
+
+//material ui
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 function App() {
+  const [tab, setTab] = useState(1);
+
+  const changeTab = (tab) => {
+    console.log("tab index", tab);
+    setTab(tab);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider>
+      <NavBar changeTab={changeTab} />
+      {tab === 1 && <Home />}
+      {tab === 2 && <Projects />}
+    </MuiThemeProvider>
   );
 }
 
